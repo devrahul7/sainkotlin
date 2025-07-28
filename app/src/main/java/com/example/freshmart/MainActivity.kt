@@ -186,12 +186,11 @@ fun SplashScreen(onNavigateToLogin: () -> Unit) {
                             fontSize = 64.sp,
                             modifier = Modifier.padding(8.dp)
                         )
-                        // If you have the drawable, uncomment this and comment out the Text above:
-                        // Image(
-                        //     painter = painterResource(id = R.drawable.img),
-                        //     contentDescription = "FreshMart Logo",
-                        //     modifier = Modifier.size(100.dp)
-                        // )
+                         Image(
+                             painter = painterResource(id = R.drawable.img),
+                             contentDescription = "FreshMart Logo",
+                             modifier = Modifier.size(100.dp)
+                         )
                     }
                 }
 

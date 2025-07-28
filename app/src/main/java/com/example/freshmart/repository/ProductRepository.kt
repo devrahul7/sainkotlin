@@ -2,9 +2,6 @@ package com.example.freshmart.repository
 
 
 
-
-
-
 import android.content.Context
 import android.net.Uri
 import com.example.freshmart.model.ProductModel

@@ -6,4 +6,5 @@
     <string name="title_activity_reset_password">ResetPasswordActivity</string>
     <string name="title_activity_view_product">ViewProductActivity</string>
     <string name="title_activity_edit_product">EditProductActivity</string>
+    <string name="title_activity_add_product">AddProductActivity</string>
 </resources>

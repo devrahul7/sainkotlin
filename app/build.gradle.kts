@@ -42,10 +42,12 @@ android {
 
 dependencies {
 
+
+
     implementation("io.coil-kt:coil-compose:2.5.0")
+
     implementation("com.cloudinary:cloudinary-android:2.2.0")
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
@@ -53,9 +55,10 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.firebase.auth)
-    implementation(libs.firebase.database.ktx)
     implementation(libs.firebase.database)
-//    implementation(libs.firebase.database)
+    implementation(libs.firebase.database)
+    implementation("androidx.compose.material:material-icons-extended:<version>")
+    implementation(libs.androidx.lifecycle.runtime.ktx)
 //    implementation(libs.firebase.firestore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
