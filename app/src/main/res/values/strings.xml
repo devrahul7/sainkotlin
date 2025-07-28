@@ -7,4 +7,6 @@
     <string name="title_activity_view_product">ViewProductActivity</string>
     <string name="title_activity_edit_product">EditProductActivity</string>
     <string name="title_activity_add_product">AddProductActivity</string>
+    <string name="title_activity_add_product_screen">AddProductScreen</string>
+    <string name="title_activity_view_product_screen">ViewProductScreen</string>
 </resources>

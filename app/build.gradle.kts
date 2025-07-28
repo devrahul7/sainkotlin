@@ -15,7 +15,6 @@ android {
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -28,13 +27,16 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
     kotlinOptions {
         jvmTarget = "11"
     }
+
     buildFeatures {
         compose = true
     }
@@ -42,24 +44,41 @@ android {
 
 dependencies {
 
+    implementation("androidx.compose.runtime:runtime-livedata:1.6.4")
+    // Core
+    implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.2")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.2")
 
+    // Compose BOM
+    implementation(platform("androidx.compose:compose-bom:2024.06.00"))
 
-    implementation("io.coil-kt:coil-compose:2.5.0")
+    // Compose UI
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-graphics")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.material:material-icons-extended")
 
-    implementation("com.cloudinary:cloudinary-android:2.2.0")
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
-    implementation(libs.firebase.auth)
-    implementation(libs.firebase.database)
-    implementation(libs.firebase.database)
-    implementation("androidx.compose.material:material-icons-extended:<version>")
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-//    implementation(libs.firebase.firestore)
+    // Activity Compose
+    implementation("androidx.activity:activity-compose:1.9.0")
+
+    // Coil
+    implementation("io.coil-kt:coil-compose:2.6.0")
+
+    // Firebase
+    implementation("com.google.firebase:firebase-database-ktx:21.0.0")
+    implementation("com.google.firebase:firebase-storage-ktx:21.0.0")
+    implementation("com.google.firebase:firebase-auth-ktx:23.0.0")
+
+    // Cloudinary
+    implementation("com.cloudinary:cloudinary-android:2.5.0")
+
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+    // Test
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

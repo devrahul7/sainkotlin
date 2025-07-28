@@ -19,8 +19,8 @@ class ViewProductActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             FreshmartTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting5(
+                Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
+                    Greeting(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
@@ -31,7 +31,7 @@ class ViewProductActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting5(name: String, modifier: Modifier = Modifier) {
+fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
         modifier = modifier
@@ -40,8 +40,8 @@ fun Greeting5(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview5() {
+fun GreetingPreview() {
     FreshmartTheme {
-        Greeting5("Android")
+        Greeting("Android")
     }
 }
